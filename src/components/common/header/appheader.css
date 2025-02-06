@@ -1,0 +1,55 @@
+header.appheader {
+    padding: 20px;
+    border-bottom: solid 1px rgb(167, 167, 167);
+    a {
+        color: black;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #00754a;
+    }
+    .left.logo {
+        img {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    .right {
+        .location {
+            a {
+                font-size: 14px;
+            }
+            img{
+                height: 18px;
+                width: 18px;
+            }
+            span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .register-link {
+            background-color: black;
+            color: white;
+            border-radius: 100px;
+        }
+        .login-link {
+            border: 1px solid black;
+            border-radius: 100px;
+        }
+    }
+    .appmenu{
+        a { 
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            color: rgb(33, 32, 32);
+            text-transform: uppercase;
+        }
+    }
+}
