@@ -32,4 +32,72 @@
         }
     }
   }
+
+  .sayHelloSectionContainer {
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .sayHelloSection{
+        h4{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color:rgba(0, 0, 0, 0.58)
+        }
+    }
+    .links {
+        a {
+            text-decoration: none;
+            padding: 10px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 100px;
+            margin: 0 10px;
+        }
+        a:first-child {
+            background-color: rgb(0, 117, 74);
+            color: white;
+        }
+        a:last-child {
+            border: 1px solid rgb(0, 117, 74);
+            color: black;
+        }
+        
+    }
+  }
+
+  .ctaCardSection {
+    .ctaCard {
+        border-radius: 8px;
+        figure {
+            margin: 0;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        border-radius: 100px;
+        div:last-child {
+            background-color: rgb(0, 117, 74);
+            h4 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .ctaCard.invert {
+        div:last-child {
+            background-color: white;
+            h4 {
+               color: white;
+            }
+        }
+    }
+  }
+
 }

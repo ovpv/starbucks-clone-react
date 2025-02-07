@@ -3,12 +3,13 @@ import locationIcon from "../../../assets/location-icon.svg";
 import "./appheader.css";
 import AppMenu from "./AppMenu";
 import { Link } from "react-router-dom";
+
 export interface AppHeaderProps {}
 
 export default function AppHeader() {
   return (
     <header className="appheader">
-      <div className="container mx-4 d-flex flex-row">
+      <div className="container d-flex flex-row">
         <div className="left logo col-1">
           <img src={StarbucksLogo} alt="starbucks logo" />
         </div>

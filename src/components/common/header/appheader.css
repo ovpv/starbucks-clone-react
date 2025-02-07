@@ -1,4 +1,7 @@
 header.appheader {
+    position: sticky;
+    top: 0;
+    background-color: white;
     padding: 20px;
     border-bottom: solid 1px rgb(167, 167, 167);
     a {
