@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function FindStore() {
   return (
     <section className="findStoreSection d-flex">
-      <div className="left d-flex flex-column justify-content-between p-5">
+      <div className="left d-flex flex-column justify-content-between px-4 py-5 col-4">
         <div>
           <h2>Find a store</h2>
           <p>
@@ -15,9 +15,9 @@ export default function FindStore() {
           <Link to="#">Share Location</Link>
         </div>
       </div>
-      <div className="right">
+      <div className="right col-8">
         <iframe
-          width="600"
+          width={"100%"}
           height="450"
           style={{ border: 0 }}
           loading="lazy"
