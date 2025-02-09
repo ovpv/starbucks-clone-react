@@ -53,20 +53,22 @@ export function CtaCard({
 }: ICtaCardProps) {
   return (
     <div className={`col-6 ctaCard ${invert ? "invert" : ""}`}>
-      <div className="imgContainer">
-        <img
-          data-image=""
-          src={img}
-          alt="Pistachio is here, with a twist"
-          width="540"
-          height="277"
-        />
-      </div>
-      <div className="p-3">
-        <h4 className="pb-2">{title}</h4>
-        <p className="pb-3">{text}</p>
-        <div className="pb-3">
-          <Link to={link ?? "#"}>{linkText}</Link>
+      <div>
+        <div className="imgContainer">
+          <img
+            data-image=""
+            src={img}
+            alt="Pistachio is here, with a twist"
+            width="540"
+            height="277"
+          />
+        </div>
+        <div className="p-3">
+          <h4 className="pb-2">{title}</h4>
+          <p className="pb-3">{text}</p>
+          <div className="pb-3">
+            <Link to={link ?? "#"}>{linkText}</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -71,8 +71,11 @@
 
   .ctaCardSection {
     .ctaCard {
+      > div {
+        border-radius: 8px;
+        overflow: hidden;
+      }
       flex-grow: 1;
-      border-radius: 8px;
       .imgContainer {
         margin: 0;
         img {

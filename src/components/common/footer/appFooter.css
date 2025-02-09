@@ -1,4 +1,14 @@
 .appFooter {
+  a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  a:hover {
+    color: white;
+  }
   background-color: rgb(30, 57, 50);
   padding: 30px 20px;
   .logo {
@@ -13,15 +23,14 @@
       font-weight: 600;
       color: white;
     }
-    a {
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 400;
-    }
+  }
 
-    a:hover {
-      color: white;
+  .social-links {
+    a {
+      img {
+        height: 24px;
+        width: 24px;
+      }
     }
   }
 }
