@@ -28,14 +28,14 @@ const CtaCardData: ICtaCardData[] = [
     title: "About Us",
     text: "Find out more about our company and heritage.",
     link: "/about-us",
-    linkText: "Find our more",
+    linkText: "Find out more",
   },
   {
     img: "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/styles/c22_featured_card_531x273/public/2022-03/Copy-of-Headers-for-Starbucks-Stories-EMEA-7.jpg?h=14cd3cd6&itok=meyuBbY9",
     title: "Starbucks Stories",
     text: "Keep up to date with our latest stories and news.",
     link: "https://stories.starbucks.com/emea/",
-    linkText: "Find our more",
+    linkText: "Find out more",
   },
 ];
 
@@ -53,7 +53,7 @@ export function CtaCard({
 }: ICtaCardProps) {
   return (
     <div className={`col-6 ctaCard ${invert ? "invert" : ""}`}>
-      <figure>
+      <div className="imgContainer">
         <img
           data-image=""
           src={img}
@@ -61,11 +61,11 @@ export function CtaCard({
           width="540"
           height="277"
         />
-      </figure>
+      </div>
       <div className="p-3">
-        <h4>{title}</h4>
-        <p>{text}</p>
-        <div>
+        <h4 className="pb-2">{title}</h4>
+        <p className="pb-3">{text}</p>
+        <div className="pb-3">
           <Link to={link ?? "#"}>{linkText}</Link>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function CtaCardSection() {
   return (
     <section className="row g-3 ctaCardSection">
       {CtaCardData.map((c, i) => (
-        <CtaCard {...c} invert={i % 2 === 0} />
+        <CtaCard {...c} invert={i === 1 || i === 2} />
       ))}
     </section>
   );
