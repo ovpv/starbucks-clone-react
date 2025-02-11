@@ -11,7 +11,9 @@ export default function AppHeader() {
     <header className="appheader">
       <div className="container d-flex flex-row">
         <div className="left logo col-1">
-          <img src={StarbucksLogo} alt="starbucks logo" />
+          <Link to={"/"}>
+            <img src={StarbucksLogo} alt="starbucks logo" />
+          </Link>
         </div>
         <div className="middle col-8 d-flex align-items-center">
           <AppMenu />

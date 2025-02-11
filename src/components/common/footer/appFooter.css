@@ -33,4 +33,20 @@
       }
     }
   }
+
+  .download-apps {
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    h4 {
+      font-size: 16px;
+      color: white;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
 }

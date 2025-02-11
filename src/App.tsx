@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/home/HomePage";
 import { APP_MENU_LINKS } from "./components/common/header/menuLinks";
+import LoginPage from "./pages/login/LoginPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           {APP_MENU_LINKS.map((m) => (
             <Route element={<m.comp />} path={m.path} />
           ))}
+          <Route element={<LoginPage />} path="/login" />
         </Routes>
       </BrowserRouter>
     </div>

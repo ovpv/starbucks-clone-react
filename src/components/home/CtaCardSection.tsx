@@ -63,7 +63,7 @@ export function CtaCard({
             height="277"
           />
         </div>
-        <div className="p-3">
+        <div className="px-3 pb-4 pt-3">
           <h4 className="pb-2">{title}</h4>
           <p className="pb-3">{text}</p>
           <div className="pb-3">
